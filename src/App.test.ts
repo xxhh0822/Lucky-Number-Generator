@@ -65,4 +65,16 @@ describe('App', () => {
 
     expect(wrapper.text()).toContain('复制失败，请稍后重试')
   })
+
+  it('shows the local-processing notice and repository link', () => {
+    const wrapper = mount(App)
+    const link = wrapper.get('.footer-security a')
+
+    expect(wrapper.get('.footer-security').text()).toContain(
+      '纯前端运行，数据仅在本地处理',
+    )
+    expect(link.attributes('href')).toBe('https://github.com/xxhh0822/Lucky-Number-Generator')
+    expect(link.attributes('rel')).toBe('noopener noreferrer')
+    expect(link.find('svg').exists()).toBe(true)
+  })
 })

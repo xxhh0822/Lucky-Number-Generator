@@ -581,15 +581,33 @@ a:focus-visible {
   font-size: 11px;
 }
 
-footer {
+.site-footer {
   display: flex;
-  gap: 6px;
+  flex-direction: column;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   min-height: 70px;
   padding: 18px 24px;
   color: #8793a6;
   font-size: 13px;
+}
+
+.footer-notice,
+.footer-security {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-security a {
+  display: inline-flex;
+  color: inherit;
+  transition: color 0.15s;
+}
+
+.footer-security a:hover {
+  color: var(--blue);
 }
 
 .toast {
