@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="幸运选号双球图标">
+  <defs>
+    <radialGradient id="red" cx="32%" cy="24%" r="72%">
+      <stop offset="0" stop-color="#ff8590"/>
+      <stop offset="0.34" stop-color="#ff5361"/>
+      <stop offset="1" stop-color="#e72739"/>
+    </radialGradient>
+    <radialGradient id="blue" cx="30%" cy="22%" r="74%">
+      <stop offset="0" stop-color="#75baff"/>
+      <stop offset="0.36" stop-color="#2e8ff5"/>
+      <stop offset="1" stop-color="#0964ce"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.2" flood-color="#152849" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <circle cx="27" cy="27" r="21" fill="url(#red)" filter="url(#shadow)"/>
+  <circle cx="22" cy="20" r="5" fill="#fff" opacity="0.38"/>
+  <circle cx="45" cy="43" r="14" fill="url(#blue)" stroke="#fff" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="41.5" cy="38.5" r="3.2" fill="#fff" opacity="0.32"/>
+</svg>
